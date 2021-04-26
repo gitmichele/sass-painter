@@ -2,8 +2,10 @@
 
 let mix = require('laravel-mix');
 
-mix
-    .sass('src/style.scss', '')
-    .setPublicPath('dist')
-    .copy('src/index.html', 'dist')
-    ;
+
+mix.sass('src/style.scss', 'dist').options({
+    processCssUrls: false
+});
+
+mix.copy('src/index.html', 'dist');
+

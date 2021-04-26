@@ -77,3 +77,39 @@ header .header-nav .nav-links li:hover {
 header .header-nav .nav-links li:hover a {
   color: #000;
 }
+
+#jumbotron {
+  height: 500px;
+  background-image: url(img/bg-painter-home.jpg);
+  background-size: cover;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+}
+#jumbotron .text-container {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#jumbotron .text-container img {
+  width: 275px;
+}
+#jumbotron .text-container a {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 3px solid #000;
+}
+#jumbotron .text-container p:nth-child(3) {
+  color: #d779a5;
+}
+#jumbotron .text-container a:first-child {
+  background-color: #000;
+  color: #fff;
+  margin-right: 15px;
+}
+#jumbotron .text-container a:last-child {
+  background-color: transparent;
+  color: #000;
+}
