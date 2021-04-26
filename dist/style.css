@@ -1,1 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  background-color: #101010;
+}
+header .header-actions {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .header-actions .actions-links {
+  display: flex;
+}
+header .header-actions .actions-links li {
+  padding-left: 20px;
+}
+header .header-actions .actions-links li a {
+  color: #989898;
+  font-size: 11px;
+}
+header .header-actions .actions-links li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+header .header-actions .actions-links li a i {
+  color: #009cff;
+}
+header .header-actions select {
+  margin-left: 20px;
+  height: 15px;
+  font-size: 11px;
+}
+header .header-nav {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+header .header-nav #logo {
+  height: 50%;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+header .header-nav #logo img {
+  height: 100%;
+}
+header .header-nav .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 50px;
+  cursor: pointer;
+}
+header .header-nav .nav-links li a {
+  color: #fff;
+}
+header .header-nav .nav-links li:hover {
+  background-color: #fff;
+}
+header .header-nav .nav-links li:hover a {
+  color: #000;
+}

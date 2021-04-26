@@ -1,0 +1,104 @@
+// IMPORT
+@import "partials/colors";
+@import "partials/homepage";
+
+// GENERAL RULES
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    
+    a{
+        text-decoration: none;
+    }
+}
+
+// TEXT-STYLE
+$small-links: 11px;
+$big-links: 14px;
+// $small-buttons
+// $big-buttons
+// $small-p
+// $big-p
+// $h2-size
+// $h3-size 
+// $h4-size
+
+
+// HEADER
+header{
+    @include header-layout;
+
+    .header-actions{
+        @include header-split;
+        justify-content: flex-end;
+
+        .actions-links{
+            display: flex;
+
+            li{
+                padding-left: 20px;
+
+                a{
+                    color: $actions-color;
+                    font-size: $small-links;
+
+                    &:hover{
+                        color: $primary-color;
+                        text-decoration: underline;
+                    }
+                
+                    i{
+                        color: $actions-icons-color;
+                    }
+                }
+            }
+        }
+
+        select{
+            margin-left: 20px;
+            height: 15px;
+            font-size: $small-links;
+        }
+    }
+
+    .header-nav{
+        @include header-split;
+
+        #logo{
+            height: 50%;
+            margin-bottom: 10px;
+            margin-right: 20px;
+
+            img{
+                height: 100%;
+            }
+        }
+
+        .nav-links{
+
+            li{
+                @include header-nav-links;
+                
+                a{
+                    color: $primary-color;
+                }
+            
+                &:hover{
+                    background-color: $header-hover-bg;
+
+                    a{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
